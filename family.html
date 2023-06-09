@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>My Personal Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/05fd3abd71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!----- About Us subheader ------->
+   <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="asset/images/logo1.png"></a>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="experience.html">EXPERIENCE</a></li>
+                  <li><a href="family.html">FAMILY</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+              </ul>
+          </div>
+      </nav>
+      <h1>My Family</h1>
+      <br>
+      <p><i>"Sunny, yesterday my life was filled with rain<br>Sunny, you smiled at me and really eased the pain<br>
+             Now the dark days are done, and the bright days are here<br>My Sunny one shines so sincere<br>Sunny one so true, I love you".</i></p>
+      </nav>
+    </section>
+
+
+<!----- My family ------->
+
+<hr size="10" color="#000000">
+<br><br>
+    <div class="container">
+      <div class="image">
+        <img src="asset/images/fam1.jpg">
+      </div>
+    </div>
+<br>
+<br>
+<br>
+
+<hr size="10" color="#000000">
+<br>
+<center>
+   <div class="box">To me, family means:
+<br>
+I will never be truly alone, and
+I'll always have a place to call home.
+I have people who know the real me,
+And they still love me even if we disagree.
+Though sometimes we may fuss and fight,
+In the end everything will be all right
+Because families forgive each other no matter what.
+That's just the way it is, no ifs, ands, or buts.
+Family stays true all the way down the line,
+And I couldn't live without these people of mine.
+Yes, this is what family means to me,
+If this rings true for you, then I'm sure you agree.
+   </div>
+<br>
+<br>
+<hr size="10" color="#000000">
+<br>
+<br>
+<center>
+<h2><i>Family Gallery</h2></i>
+</center>
+
+<div class="row">
+  <div class="column">
+    <img src="asset/images/fam4.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="asset/images/fam2.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="asset/images/fam3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="asset/images/fam5.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="asset/images/fam7.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="asset/images/fam6.jpg" style="width:100%">
+  </div>
+</div>
+
+
+
+<!----- Footer ------->
+
+<br>
+<br>
+<br>
+<div class="footer">
+  <p>Created by Adham. © 2023</p>
+</div>
+
+
+
+
+<!----- JS for About Me ------->
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   
+   function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+
+<!----- JS for My Image ------->
+
+<script>
+   
+   var fullImgBox = document.getElementById("fullImgBox");
+   var fullImg = document.getElementById("fullImg");
+
+   function openFullImg(pic){
+     fullImgBox.style.display = "flex";
+     fullImg.src = pic;
+   }
+
+   function closeFullImg(){
+     fullImgBox.style.display = "none";
+   }
+</script>
+
+
+
+</body>
+</html>

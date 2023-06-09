@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Muhd Adham Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/05fd3abd71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!----- Home ------->
+   <section class="header">
+      <nav>
+          <a href="index.html"><img src="asset/images/logo1.png"></a>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="experience.html">EXPERIENCE</a></li>
+                  <li><a href="family.html">FAMILY</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                
+              </ul>
+          </div>
+      </nav>
+
+<div class="text-box">
+    <h1><i>My Personal Website</i></h1>
+    <p>Hello, I'm Muhammad Adham. Welcome to my website, which I have created using the valuable skills I acquired during the IMD311 course. Armed with knowledge in HTML, CSS, and JavaScript, I have employed Notepad as my tool of choice to design this website.<br><br>Throughout the process, I received guidance from Sir Airul, whose expertise has been instrumental in shaping my understanding of web development.
+    Now, let's dive in and explore what I have accomplished through this project. Join me on this journey as we embark on an exciting exploration of my website. Let's go!
+    <p>SCROLL DOWN TO SEE MORE &#11015 &#11015 &#11015</p>
+</div>
+   </section>
+
+
+
+<!----- About ------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="asset/images/img3.png">
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Muhammad Adham bin Mohd Akhir. I am a courageous and determined individual born in Kuala Lumpur, Wilayah Persekutuan, Malaysia. At the age of 20, I possesses a strong resolve and is always eager to explore new things and broaden my knowledge. While me occasionally battles with self-doubt, my determination never wavers, and I consistently strives to overcome my perceived limitations.</p>
+                <br>
+                <p>I have a deep passion for football sports and finds joy in both watching and playing the game. In addition, I also enjoys spending my leisure time immersed in video games, which provide myself with a sense of entertainment and relaxation.</p>
+                <br>
+                <p>My ambition is to successfully complete my diploma and progress to a degree. I envisions a future where I can leverage my acquired skills to build my own website. Enrolling in the course IMD311, I hopes to gain proficiency in HTML, CSS, and JavaScript, enabling me to create and design websites from scratch. I believes that acquiring these skills will empower myself to apply them effectively in various professional settings and endeavors in the future.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                       <li><span>Electronic Publishing</span><br>Proficient in using basic Adobe software</li>
+                       <li><span>Multimedia</span><br>Skillful in using basic Adobe Animate<br></li>
+                       <li><span>Web Design</span><br>Can create websites using basic HTML, CSS, and Javascript<br></li>
+                    </ul>
+                </div>
+               <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>2010-2015</span><br>Primary school at SK Cenderawasih, Kuantan, Pahang</li>
+                       <li><span>2016-2020</span><br>Secondary school at SMK Cenderawasih, Kuantan, Pahang<br></li>
+                       <li><span>2021-Current</span><br>Diploma in Library Management at UiTM Merbok, Kedah<br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
+    <hr class="solid" width: "100%"; align: "center" color= #424949/>   
+
+
+           
+<!----- My Image ------->
+
+<div class="full-img" id="fullImgBox">
+    <img src="asset/images/img1.jpg" id="fullImg">
+    <span onclick="closeFullImg()"> X </span>
+</div>
+<div class="img-gallery">
+    <h1>Embracing my Twenties</h1>
+    <img src="asset/images/img1.jpg" onclick="openFullImg(this.src)">
+    <img src="asset/images/myself2.jpg" onclick="openFullImg(this.src)">
+    <img src="asset/images/myself3.jpg" onclick="openFullImg(this.src)">
+    <img src="asset/images/myself4.jpg" onclick="openFullImg(this.src)">
+    <img src="asset/images/friend2.jpg" onclick="openFullImg(this.src)">
+    <img src="asset/images/myself7.jpg" onclick="openFullImg(this.src)">
+    <img src="asset/images/myself6.jpg" onclick="openFullImg(this.src)">
+    <img src="asset/images/myself8.jpg" onclick="openFullImg(this.src)">
+</div>
+    <hr class="solid" width: "100%"; align: "center" color= #424949/>  
+
+
+
+<!----- Contact Me ------->
+
+<div id="contact">
+    <div class="container">
+       <div class="row">
+           <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>Email me: adhamakhir136@gmail.com</p>
+              <p>My phone number: 011-36721003</p>
+              <div class="contact-right">
+              <br>
+              <h2>Visit my social media</h2>
+                  <a href="https://wa.me/601136721003" class="fa fa-whatsapp"></a>
+                  <a href="https://www.facebook.com/muhd.adham.1800" class="fa fa-facebook"></a>
+                  <a href="https://instagram.com/just_adh4m?igshid=NGExMmI2YTkyZg==" class="fa fa-instagram"></a>
+                  <a href="https://www.snapchat.com/add/adhamhn241?share_id=-FYLXY7x0XQ&locale=en-GB" class="fa fa-snapchat"></a>
+                  <u><strong>TikTok &#10145</i></strong></u>
+                  <strong><i><a href="https://www.tiktok.com/@adhamussy?_t=8crY6baV973&_r=1" target="_blank">
+                  <u><strong>@adhamussy</i></strong></u></a>
+              </div> 
+           </div>
+       </div>
+    </div>
+</div>
+
+
+<!----- Footer ------->
+
+<div class="footer">
+  <p>Created by Adham. © 2023</p>
+</div>
+
+<!----- JS for About Me ------->
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   
+   function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+
+<!----- JS for My Image ------->
+
+<script>
+   
+   var fullImgBox = document.getElementById("fullImgBox");
+   var fullImg = document.getElementById("fullImg");
+
+   function openFullImg(pic){
+     fullImgBox.style.display = "flex";
+     fullImg.src = pic;
+   }
+
+   function closeFullImg(){
+     fullImgBox.style.display = "none";
+   }
+</script>
+
+
+</body>
+</html>

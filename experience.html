@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>My Personal Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/05fd3abd71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!----- About Us subheader ------->
+   <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="asset/images/logo1.png"></a>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="experience.html">EXPERIENCE</a></li>
+                  <li><a href="family.html">FAMILY</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+              </ul>
+          </div>
+      </nav>
+      <h1>My Experience</h1>
+      <br>
+      <p><i>"On the other side<br>Where the grass seems to be greener<br>On the other side<br>Where my rib cage could be cleaner<br>On the other side<br>Where the light will not go out".</i></p>
+      </nav>
+    </section>
+
+
+<!----- My experience ------->
+
+<hr size="10" color="#000000">
+<br>
+<br>
+<br>
+<center>
+<h2><i>WORK EXPERIENCE</h2></i>
+<br>
+<p2>During my Industrial Training at Perbadanan Perpustakaan Awam Pahang (PPAP), I had an incredible experience and thoroughly enjoyed working at the library. It provided me with a multitude of valuable experiences. The vibrant atmosphere, filled with the smell of books and the buzz of eager readers, instilled in me a deep appreciation for the importance of knowledge and the role libraries play in fostering a love for learning. Collaborating with the knowledgeable librarians and engaging with diverse patrons allowed me to enhance my communication and interpersonal skills. Additionally, I gained practical knowledge in library management, cataloging, and assisting visitors in their search for information. This enriching experience has not only deepened my passion for literature but also broadened my horizons, leaving me with cherished memories and a newfound appreciation for the invaluable services libraries offer to society.</p2>
+</center>
+<br>
+<br>
+<hr size="10" color="#000000">
+
+<br>
+<br>
+<center>
+<marquee width="60%" direction="left"><b><i>Photos of my intership at PPAP.</b></i></marquee>
+<br>
+<br>
+</center>
+<center>
+<div class="gallery">
+    <img src="asset/images/intern1.jpg" alt="Image 1">
+    <img src="asset/images/intern2.jpg" alt="Image 2">
+    <img src="asset/images/intern3.jpg" alt="Image 3">
+    <img src="asset/images/intern5.jpg" alt="Image 4">
+    <img src="asset/images/intern4.jpg" alt="Image 5">
+    <img src="asset/images/intern6.jpg" alt="Image 6">
+</div>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----- Footer ------->
+
+<br>
+<br>
+<br>
+<div class="footer">
+  <p>Created by Adham. © 2023</p>
+</div>
+
+
+
+
+<!----- JS for About Me ------->
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   
+   function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+
+<!----- JS for My Image ------->
+
+<script>
+   
+   var fullImgBox = document.getElementById("fullImgBox");
+   var fullImg = document.getElementById("fullImg");
+
+   function openFullImg(pic){
+     fullImgBox.style.display = "flex";
+     fullImg.src = pic;
+   }
+
+   function closeFullImg(){
+     fullImgBox.style.display = "none";
+   }
+</script>
+
+
+
+</body>
+</html>
